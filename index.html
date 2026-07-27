@@ -920,7 +920,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       answers.dorLabel = btn.querySelector('.option-label').textContent;
       stepIndex = 4;
       updateProgress();
-      pushDataLayerEvent('colocou_dor', { dor: answers.dor });
+      pushDataLayerEvent('colocou_botox', { dor: answers.dor });
       showScreen('screen-periodo');
     });
   });
@@ -937,7 +937,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       answers.periodo = btn.dataset.value;
       answers.periodoLabel = btn.querySelector('.option-label').textContent;
 
-      pushDataLayerEvent('colocou_periodo', { periodo: answers.periodo });
+      pushDataLayerEvent('colocou_agendamento', { periodo: answers.periodo });
       pushDataLayerEvent('formulario_completo', {
         dor: answers.dor,
         periodo: answers.periodo
