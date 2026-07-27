@@ -440,10 +440,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // =========================================================
   // CONFIGURAÇÃO — edite estas linhas antes de publicar
   // =========================================================
-  const WEBHOOK_URL        = ""; // TODO: aguardando dados do CRM
-  const WEBHOOK_TENANT_ID   = ""; // TODO: aguardando dados do CRM
-  const WEBHOOK_KEY         = ""; // TODO: aguardando dados do CRM
-  const WEBHOOK_PIPELINE_ID = ""; // TODO: aguardando dados do CRM
+  const WEBHOOK_URL        = "https://miezatcdfldmqmxgpkwr.supabase.co/functions/v1/receive-lead";
+  const WEBHOOK_TENANT_ID   = "d7088fa6-3e44-4ebc-9664-e1990e0a9a47";
+  const WEBHOOK_KEY         = "c01a06bb-660b-4866-a663-6a61e748a258";
+  const WEBHOOK_PIPELINE_ID = "d2f3bce2-f82a-4521-9e5d-1306bf236237";
   // Número que recebe o clique de "Chamar no WhatsApp" (com DDI+DDD, só dígitos)
   const WHATSAPP_CTA_NUMBER = "556186212978";
   const WHATSAPP_CTA_TEXT   = "Olá! Preenchi o formulário e quero agilizar meu atendimento.";
@@ -496,10 +496,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           phone: answers.whatsapp,
           _hp: hpValue,
           custom_fields: {
-            nome: answers.nome,
-            telefone: answers.whatsapp,
-            ja_fez_botox: answers.dorLabel,
-            quando_pretende_agendar: answers.periodoLabel
+            qual_o_seu_nome: answers.nome,
+            qual_o_seu_numero: answers.whatsapp,
+            voce_ja_fez_botox_antes_ou_seria_sua_primeira_vez: answers.dorLabel,
+            quando_voce_pretende_agendar_sua_avaliacao: answers.periodoLabel
           }
         })
       });
