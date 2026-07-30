@@ -408,7 +408,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        precisar renomear o JS todo — só o texto/opções visíveis mudaram. -->
   <div class="screen" id="screen-dor">
     <button type="button" class="back-btn" id="btn-back-to-phone" data-target="screen-phone">← Voltar</button>
-    <h1 class="light-heading">Você já fez botox antes ou seria sua primeira vez? <span class="required-mark">*</span></h1>
+    <h1 class="light-heading">Você já fez preenchimento labial antes ou seria sua primeira vez? <span class="required-mark">*</span></h1>
     <div class="letter-options">
       <button type="button" class="letter-option" id="btn-dor-1" data-value="ja_fiz_manter"><span class="letter-badge">A</span><span class="option-label">Já fiz e quero manter os resultados</span></button>
       <button type="button" class="letter-option" id="btn-dor-2" data-value="nunca_fiz_interesse"><span class="letter-badge">B</span><span class="option-label">Nunca fiz, mas tenho interesse</span></button>
@@ -920,7 +920,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       answers.dorLabel = btn.querySelector('.option-label').textContent;
       stepIndex = 4;
       updateProgress();
-      pushDataLayerEvent('colocou_botox', { dor: answers.dor });
+      pushDataLayerEvent('colocou_preenchimento', { dor: answers.dor });
       showScreen('screen-periodo');
     });
   });
